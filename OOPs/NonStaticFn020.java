@@ -1,4 +1,4 @@
-public class NonStaticFn019 {
+public class NonStaticFn020 {
     public static void main (String[] args) {
         // fun();  You cannot call a non-static method directly from a static method.
     }
@@ -7,11 +7,11 @@ public class NonStaticFn019 {
     }
 }
 
-// soln to this - is to make a object from  filename class : NonStaticFn019
+// soln to this - is to make a object from  filename class : NonStaticFn020
 /*
-public class NonStaticFn019 {
+public class NonStaticFn020 {
     public static void main (String[] args) {
-        NonStaticFn019 obj = new NonStaticFn019();
+        NonStaticFn020 obj = new NonStaticFn020();
         obj.fun();  // ✅
     }
     private void fun() {  // non static fn

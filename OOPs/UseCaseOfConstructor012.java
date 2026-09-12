@@ -1,5 +1,5 @@
 
-public class UseCaseOfConstructor012 {
+public class UseCaseOfConstructor012 { 
     public static class StudentData {
         String name;
         int rno;

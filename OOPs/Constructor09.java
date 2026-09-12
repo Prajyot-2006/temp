@@ -12,9 +12,14 @@ class Car {
         name = s;
         length = d;
     }
-    void print() {
+    void print() {  // we can make fn of any return data types like : int , double , void etc 
         System.out.println(seats + " " + name + " " + length + " ");
     }
+/*
+    int send() {
+        return 0;
+    }
+*/
 }
 
 public class Constructor09 {
