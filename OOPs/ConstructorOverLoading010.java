@@ -23,7 +23,7 @@ class Car{
     }
 }
 
-public class Constructor010 {
+public class ConstructorOverLoading010 {
 
     public static void main (String[] args) {
 
