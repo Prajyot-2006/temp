@@ -6,8 +6,8 @@ class Car {
 }
 public class passingObjectsToMethods05 {
 
-    public static void change(Car c1) { // this c1 is pointing to main function's c1 only 
-        c1.name = "Lamborghini";
+    public static void change(Car t1) { // this t1 is pointing to main function's c1 only 
+        t1.name = "Lamborghini";
     }
     public static void main(String[] args) {
         Car c1 = new Car();
