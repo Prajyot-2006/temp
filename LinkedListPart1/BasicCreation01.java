@@ -17,6 +17,8 @@ public class BasicCreation01 {
         Node e = new Node();
         e.val = 50;
 
+        
+
         // Before connecting/linking this is what we get
         System.out.println(a.next);  // b
         System.out.println(b.next);  // c
@@ -30,5 +32,6 @@ public class BasicCreation01 {
 
         System.out.println(a.next);  // after connection , it contains some reference value this is b's reference value
         System.out.println(b.next);  // this is c's reference value
+
     }
 }

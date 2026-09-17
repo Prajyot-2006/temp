@@ -6,10 +6,23 @@ class Node {  // user defined data type
     }
 }
 
+
 class Linkedlist {  // user defined data structure
     Node head;  // null
     Node tail;  // null
     int size;
+
+    int search(int val) {
+        if(head==null) return -1;
+        Node temp = head;
+        int idx = 0;
+        while(temp!=null) {
+            if(temp.val==val) return idx;
+            temp = temp.next;
+            idx++;
+        }
+        return -1;
+    }
 
     void addAtTail(int val) {
         Node temp = new Node(val);
@@ -59,8 +72,10 @@ class Linkedlist {  // user defined data structure
     }
 }
 
-public class LinkedListClass06 {
+
+public class LinkedListClassContinue09 {
     public static void main(String[] args) {
+        
         Linkedlist ll = new Linkedlist();
 
         ll.addAtTail(100);
@@ -78,9 +93,6 @@ public class LinkedListClass06 {
         ll.display();
         System.out.println();
         System.out.println(ll.size);
-
-
-        
-
+        System.out.println(ll.search(300));
     }
 }
