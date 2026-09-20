@@ -6,7 +6,6 @@ class Node {  // user defined data type
     }
 }
 
-
 class Linkedlist {  // user defined data structure
     Node head;  // null
     Node tail;  // null
@@ -22,6 +21,18 @@ class Linkedlist {  // user defined data structure
             idx++;
         }
         return -1;
+    }
+
+    int getVal(int idx) {
+        if(idx<0 || idx>=size) {
+            System.out.println("Invalid index!");
+            return -1;
+        }
+        Node temp = head;
+        for(int i=0;i<idx;i++) {  // i<4
+            temp = temp.next;
+        }
+        return temp.val;
     }
 
     void addAtTail(int val) {
@@ -81,6 +92,24 @@ class Linkedlist {  // user defined data structure
         }
     }
 
+    void delete(int idx) {
+        if(idx<0 || idx>=size) {
+            System.out.println("Invalid index!");
+            return;
+        }
+        if(idx==0) {
+            deleteAtHead();
+            return;
+        }
+        Node temp = head;
+        for(int i=0;i<idx-1;i++) {  // i<4
+            temp = temp.next;
+        }
+        temp.next = temp.next.next;  // delete
+        if(idx == size-1) tail = temp;    // we are deleting tail
+        size--;
+    }
+
     void display() {
         if(head==null) return;
         Node temp = head;
@@ -111,9 +140,26 @@ public class LinkedListClassContinue09 {
         ll.deleteAtHead();
         ll.display();
         System.out.println();
+
         System.out.println(ll.size);
+
         System.out.println(ll.search(300));
+
         ll.insert(76, 2);
+        ll.addAtTail(600);
+        System.out.println();
+
+        ll.display();
+        System.out.println();
+
+        ll.delete(5);
+        ll.display();
+        System.out.println();
+        System.out.println(ll.size);
+
+        System.out.println(ll.getVal(ll.size - 1));
+        System.out.println();
+        ll.addAtTail(800);
         ll.display();
     }
 }

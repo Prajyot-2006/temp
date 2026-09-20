@@ -26,7 +26,9 @@ public class userDefinedDataType01 {
         s4.cgpa = 9.2;
 
         System.out.println(s1.name + " " + s1.rno + " " + s1.cgpa);
+        System.out.println(s1);   // this prints reference value
         System.out.println(s2.name + " " + s2.rno + " " + s2.cgpa);
+        System.out.println(s2);
         System.out.println(s3.name + " " + s3.rno + " " + s3.cgpa);
         System.out.println(s4.name + " " + s4.rno + " " + s4.cgpa);
 

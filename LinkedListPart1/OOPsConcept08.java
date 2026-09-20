@@ -4,7 +4,7 @@ class Temp {
         System.out.println("Hello ");
     }
 }
-public class OOPsComcept08 {
+public class OOPsConcept08 {
     public static void main(String[] args) {
         int x;
         // System.out.println(x);   --> gives errrorrr
