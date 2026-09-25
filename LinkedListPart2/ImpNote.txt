@@ -1,0 +1,3 @@
+if u ever think or have any problem with any questions file then go seacrh for that question on leetcode and understand the soln and most important dry run the code then only u will understand linkedlist
+the problem is ; we cannot create linkedlist from srctahc every time gaian and again its verylengthy process or the code will be very long to digest 
+in leetcode the linked list is alreayd created from scratch

@@ -1,3 +1,5 @@
+// using slow-fast approach
+
 class Node {
     int val;
     Node next;
