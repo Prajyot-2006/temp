@@ -7,7 +7,7 @@ class Node {
     }
 }
 
-public class deleteMiddleNodeUsingSlowFastApproach012{
+public class deleteMiddleNodeUsingSlowFastApproach013{
     public static void main(String[] args) {
 
         // 1 -> 2 -> 3 -> 4 -> 5

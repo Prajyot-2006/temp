@@ -1,5 +1,3 @@
-// using normal method (not 1 pass soln)
-
 class Node {
     int val;
     Node next;
@@ -9,10 +7,9 @@ class Node {
     }
 }
 
-public class MiddleNodeLeetcode011{
+public class MiddleNodeListUsingSlowFast012 {
     public static void main(String[] args) {
-
-        // 1 -> 2 -> 3 -> 4 -> 5
+        
         Node a = new Node(1);
         Node b = new Node(2);
         Node c = new Node(3);
@@ -27,21 +24,13 @@ public class MiddleNodeLeetcode011{
         e.next = f;
 
         Node head = a;
-
-        int size = 0;
-        Node temp = head;
-
-        while(temp != null) {
-            size++;
-            temp = temp.next;
+        Node s = head;
+        Node f1 = head;
+        while(f1!=null && f1.next!=null) {
+            s = s.next;
+            f1 = f1.next.next;
         }
+        System.out.println(s.val);
 
-        int middle = size / 2 + 1;
-
-        for(int i = 0; i < middle - 1; i++) {
-            head = head.next;
-        }
-
-        System.out.println(head.val);
     }
 }

@@ -1,5 +1,4 @@
-// using normal method (not 1 pass soln)
-
+// for even list - gives rightmost middle node and for odd it gives middle element only
 class Node {
     int val;
     Node next;
@@ -9,10 +8,9 @@ class Node {
     }
 }
 
-public class MiddleNodeLeetcode011{
+public class RightMostMiddleElement012 {
     public static void main(String[] args) {
-
-        // 1 -> 2 -> 3 -> 4 -> 5
+        
         Node a = new Node(1);
         Node b = new Node(2);
         Node c = new Node(3);
@@ -26,22 +24,12 @@ public class MiddleNodeLeetcode011{
         d.next = e;
         e.next = f;
 
-        Node head = a;
-
-        int size = 0;
-        Node temp = head;
-
-        while(temp != null) {
-            size++;
-            temp = temp.next;
+        Node slow = a;  // head
+        Node fast = a;  // head
+        while(fast!=null && fast.next!=null) {
+            slow = slow.next;
+            fast = fast.next.next;
         }
-
-        int middle = size / 2 + 1;
-
-        for(int i = 0; i < middle - 1; i++) {
-            head = head.next;
-        }
-
-        System.out.println(head.val);
+        System.out.println(slow.val);
     }
 }
