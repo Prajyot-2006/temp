@@ -17,12 +17,14 @@ public class LeftMostMiddleElement013 {
         Node d = new Node(4);
         Node e = new Node(5);
         Node f = new Node(6);
+        Node z = new Node(7);
 
         a.next = b;
         b.next = c;
         c.next = d;
         d.next = e;
         e.next = f;
+        f.next = z;
         Node slow = a;  // head
         Node fast = a;  // head
         while(fast.next!=null && fast.next.next!=null) {
